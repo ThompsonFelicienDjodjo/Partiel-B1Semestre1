@@ -9,15 +9,43 @@
 </head>
 <body>
 
-<div class="content">
-    <div class="login">
-        <input type="text" id="login-email" name="" class="username" placeholder="username" >
-        <input type="password" class="password" placeholder="password">
-        <button class="submitLogin">Log in</button>
-
-        <p>pas encore de compte? <a href="inscription.html">S'inscrire</a></p>
+<form id="login-form">
+    <div class="mb-3">
+        <label for="login-email" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="login-email" aria-describedby="emailHelp">
+        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
     </div>
-</div>
+    <div class="mb-3">
+        <label for="login-password" class="form-label">Password</label>
+        <input type="password" class="form-control" id="login-password">
+    </div>
+    <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    </div>
+    <button type="submit" class="btn btn-success">Log in</button>
+
+    <p>pas encore de compte? <a href="inscription.html">S'inscrire</a></p>
+</form>
+
+<form id="signup-form">
+    <div class="mb-3">
+        <label for="username" class="form-label">USER NAME</label>
+        <input type="text" class="form-control" id="username" name="username">
+    </div>
+    <div class="mb-3">
+        <label for="email" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="email" name="email">
+    </div>
+    <div class="mb-3">
+        <label for="password" class="form-label">Password</label>
+        <input type="password" class="form-control" id="password">
+    </div>
+    <button type="submit" class="btn btn-success">S'inscrire</button>
+
+    <p>Vous avez déja un compte? <a href="login.html">Ce connecter</a></p>
+</form>
+
 
 <nav class="navbar navbar-expand-lg bg-warning">
     <div class="container-fluid yomiyomi">
@@ -41,15 +69,203 @@
     </div>
 </nav>
 
-<div class="card" style="width: 18rem;">
-    <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="card-link">Acheter</a>
-        <a href="#" class="card-link">Mettre en attente</a>
+<div class="container text-center">
+    <div class="row align-items-center">
+        <div class="col-3">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Lait</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">Démi-Ecrémé</h6>
+                    <p class="card-text">Contient des nutriment riche en calcium,riche en vitamine D, riche en fer,fortifie la croissance des os et stimule le cerveaux.</p>
+                    <a href="#" class="card-link">Acheter ou en attente</a>
+                    <a href="#" class="card-link">Supprimer</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Macaroni</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">Forme ressort</h6>
+                    <p class="card-text">forte teneur en protein,riche en glucide,apporte des nutriments essentiel a ma prise de poids,0% d'acide gras,faible teneur en glucose.</p>
+                    <a href="#" class="card-link">Acheter ou en attente</a>
+                    <a href="#" class="card-link">Supprimer</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Banane</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">Fruit </h6>
+                    <p class="card-text">Riche en glucide,fortifie la croissance,stimule la libido,donne du tonus, peu etre préparé comme complement pour accompagner les repas a l'instard des sauces.</p>
+                    <a href="#" class="card-link">Acheter ou en attente</a>
+                    <a href="#" class="card-link">Supprimer</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Eau minérale</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary"></h6>
+                    <p class="card-text">Riche en minéraux, matiére 100% Recyglable, Bouchon solidaire, teneur en Calcium 240, teneur en Saudium 42, teneur en magnésium54, Bicarbonate d'hydrogéné 240.</p>
+                    <a href="#" class="card-link">Acheter ou en attente</a>
+                    <a href="#" class="card-link">Supprimer</a>
+                </div>
+            </div>
+        </div>
     </div>
+    <div class="row align-items-center">
+        <div class="col-3">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Céréale</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">Miel pops</h6>
+                    <p class="card-text">En richissant fait a base de miel, riche en glucose, riche en aliment fortifiant,riche en vitamine D, riche en vitamine C, riche en calcium,fortis croissant plus .</p>
+                    <a href="#" class="card-link">Acheter ou en attente</a>
+                    <a href="#" class="card-link">Supprimer</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Tomate</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">Fruit</h6>
+                    <p class="card-text">Contient des nutriment riche en calcium,riche en vitamine D, riche en fer,fortifie la croissance des os et stimule le cerveaux.</p>
+                    <a href="#" class="card-link">Acheter ou en attente</a>
+                    <a href="#" class="card-link">Supprimer</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Moulinex</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">Robot mixer</h6>
+                    <p class="card-text">Electroménagé puissant, pratique dans le brouillement des alliments, écrase avec éfficacité et précision,fait les meilleur jus naturel maison.</p>
+                    <a href="#" class="card-link">Acheter ou en attente</a>
+                    <a href="#" class="card-link">Supprimer</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Téléviseur</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">Ecran Tv smart</h6>
+                    <p class="card-text">Technologie de derniere géneration,écran a reconnaissance vocale, wifi intégré, intélligence artificiel intégré, écran avec capture d'écran, vidéos 4k, réalité augmenté.</p>
+                    <a href="#" class="card-link">Acheter ou en attente</a>
+                    <a href="#" class="card-link">Supprimer</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row align-items-center">
+        <div class="col-3">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Lait</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">Démi-Ecrémé</h6>
+                    <p class="card-text">Contient des nutriment riche en calcium,riche en vitamine D, riche en fer,fortifie la croissance des os et stimule le cerveaux.</p>
+                    <a href="#" class="card-link">Acheter ou en attente</a>
+                    <a href="#" class="card-link">Supprimer</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Lait</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">Démi-Ecrémé</h6>
+                    <p class="card-text">Contient des nutriment riche en calcium,riche en vitamine D, riche en fer,fortifie la croissance des os et stimule le cerveaux.</p>
+                    <a href="#" class="card-link">Acheter ou en attente</a>
+                    <a href="#" class="card-link">Supprimer</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Lait</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">Démi-Ecrémé</h6>
+                    <p class="card-text">Contient des nutriment riche en calcium,riche en vitamine D, riche en fer,fortifie la croissance des os et stimule le cerveaux.</p>
+                    <a href="#" class="card-link">Acheter ou en attente</a>
+                    <a href="#" class="card-link">Supprimer</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Lait</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">Démi-Ecrémé</h6>
+                    <p class="card-text">Contient des nutriment riche en calcium,riche en vitamine D, riche en fer,fortifie la croissance des os et stimule le cerveaux.</p>
+                    <a href="#" class="card-link">Acheter ou en attente</a>
+                    <a href="#" class="card-link">Supprimer</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row align-items-center">
+        <div class="col-3">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Lait</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">Démi-Ecrémé</h6>
+                    <p class="card-text">Contient des nutriment riche en calcium,riche en vitamine D, riche en fer,fortifie la croissance des os et stimule le cerveaux.</p>
+                    <a href="#" class="card-link">Acheter ou en attente</a>
+                    <a href="#" class="card-link">Supprimer</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Lait</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">Démi-Ecrémé</h6>
+                    <p class="card-text">Contient des nutriment riche en calcium,riche en vitamine D, riche en fer,fortifie la croissance des os et stimule le cerveaux.</p>
+                    <a href="#" class="card-link">Acheter ou en attente</a>
+                    <a href="#" class="card-link">Supprimer</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Lait</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">Démi-Ecrémé</h6>
+                    <p class="card-text">Contient des nutriment riche en calcium,riche en vitamine D, riche en fer,fortifie la croissance des os et stimule le cerveaux.</p>
+                    <a href="#" class="card-link">Acheter ou en attente</a>
+                    <a href="#" class="card-link">Supprimer</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Lait</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">Démi-Ecrémé</h6>
+                    <p class="card-text">Contient des nutriment riche en calcium,riche en vitamine D, riche en fer,fortifie la croissance des os et stimule le cerveaux.</p>
+                    <a href="#" class="card-link">Acheter ou en attente</a>
+                    <a href="#" class="card-link">Supprimer</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </div>
+
+
+
+
+
+
+
+
+
+
 
 
 
