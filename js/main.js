@@ -2,6 +2,7 @@ let token = null
 const loginPage = document.getElementById("login-form");
 const textPage = document.querySelector('.card-text');
 const cardLink = document.querySelector('.card-link');
+const signPage = document.getElementById("signup-form");
 const Api = ""
 
 
@@ -18,16 +19,27 @@ loginPage.addEventListener("submit", function (e) {
 
     const email = document.getElementById("login-email").value;
     const password = document.getElementById("login-password").value;
-    const loginButton = document.querySelector('.submitLogin')
+    const loginButton = document.querySelector('.btn')
     loginButton.addEventListener('click', ()=> {
         getToken(email.value, password.value).then((res)=> {
-            if (res.token){
+            if (res){
+                console.log(res)
                 displaytextPage()
             }
         })
     })
 })
 
+signPage.addEventListener("submit", function (e){
+    e.preventDefault();
+    const username = document.getElementById("username").value;
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
+    const loginButton = document.querySelector('.btn')
+    loginButton.addEventListener('click',() => {
+
+    })
+})
 
 function displaytextpage() {
     loginPage.style.display = 'none';
